@@ -14,3 +14,13 @@ Job dependency graph parallelization, Docker Buildx cache benchmarks, and GitHub
 
 ---
 Maintained by [CIPipelineGraph](https://site-18-chi.vercel.app/).
+
+## 📚 In-Depth Technical Implementation Guides
+
+| Target Engineering Query | Production Reference & Guide URL |
+| :--- | :--- |
+| **Github Actions Vs Gitlab Ci Cost Syntax** | [https://site-18-chi.vercel.app/github-actions-vs-gitlab-ci-syntax-execution-cost-comparison/](https://site-18-chi.vercel.app/github-actions-vs-gitlab-ci-syntax-execution-cost-comparison/) |
+| **Matrix Build Optimization Github Actions Cache** | [https://site-18-chi.vercel.app/matrix-build-optimization-github-actions-cache-speed/](https://site-18-chi.vercel.app/matrix-build-optimization-github-actions-cache-speed/) |
+| **Github Actions Matrix Include Exclude Syntax** | [https://site-18-chi.vercel.app/github-actions-matrix-syntax/](https://site-18-chi.vercel.app/github-actions-matrix-syntax/) |
+| **Act Run Github Actions Local Secrets File** | [https://site-18-chi.vercel.app/act-local-secrets-guide/](https://site-18-chi.vercel.app/act-local-secrets-guide/) |
+
