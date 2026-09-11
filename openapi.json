@@ -1,0 +1,55 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "CIPipelineGraph - GitHub Actions DAG Dependency & Cache Optimization API",
+    "description": "Workflow dependency graph visualizer and Docker buildx cache speedup API. Official production documentation hosted at https://site-18-chi.vercel.app/",
+    "version": "1.1.0",
+    "contact": {
+      "name": "CIPipelineGraph Architecture Team",
+      "url": "https://site-18-chi.vercel.app/"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://site-18-chi.vercel.app",
+      "description": "Production Web Application Gateway"
+    }
+  ],
+  "paths": {
+    "/api/v1/validate-dag": {
+      "get": {
+        "summary": "Parse workflow YAML needs dependencies and calculate runner minutes",
+        "description": "Executes the empirical calculations and data models for CIPipelineGraph.",
+        "responses": {
+          "200": {
+            "description": "Successful calculation response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "example": "ok"
+                    },
+                    "timestamp": {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    "site_url": {
+                      "type": "string",
+                      "example": "https://site-18-chi.vercel.app/"
+                    },
+                    "data": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
